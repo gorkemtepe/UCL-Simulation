@@ -9,7 +9,7 @@ fixtureManager.CreateFixture(result);
 
 while (true)
 {
-    Console.WriteLine("Choose one option:(1,2)");
+    Console.WriteLine("Choose one option:(1,2,3,4)");
     Console.WriteLine("1.See match results.");
     Console.WriteLine("2.See last 16");
     Console.WriteLine("3.See Groups");
