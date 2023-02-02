@@ -101,7 +101,7 @@ namespace UCl
                 List<Team> teams = group.Teams.OrderByDescending(x=>x.Point).ThenBy(s=>s.Average).ToList();
                 foreach (var team in teams)
                 {
-                    result+=team.Name+" "+team.Point+" "+team.Average+"\n";
+                    result+=team.Name+" || "+team.Point+"\n";
                 }
                 a++;
                 result += "---------------\n";
@@ -112,6 +112,7 @@ namespace UCl
         public string PrepareLast16(List<Team> teams)
         {
             string result = "";
+            result += "----------Last 16-----------\n";
             foreach (var team in teams)
             {
                 result += team.Name + "\n";
@@ -123,6 +124,7 @@ namespace UCl
         {
             string result = "";
             int a = 1;
+            result += "-------Match Results--------";
             foreach (var match in playedMatches)
             {
                 result += "Match" + a.ToString() + " = ";
