@@ -44,7 +44,7 @@ namespace UCl
                     }
                     else
                     {
-                        if (i % 2 == 1)
+                        if (i % 2 == 0)
                         {
                             match = new Match { HomeTeam = team, AwayTeam = list[i % list.Count], AwayTeamScore = random.Next(0, 9), HomeTeamScore = random.Next(0, 9) };
                         }
@@ -124,7 +124,7 @@ namespace UCl
         {
             string result = "";
             int a = 1;
-            result += "-------Match Results--------";
+            result += "-------Match Results-------- \n";
             foreach (var match in playedMatches)
             {
                 result += "Match" + a.ToString() + " = ";
